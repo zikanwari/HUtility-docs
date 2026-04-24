@@ -24,7 +24,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v3
       with:
-          images: ghcr.io/hutility-docs/hutility-docs
+          images: ghcr.io/zikanwari/hutility-docs
     # 5. setup buildx
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v1
@@ -38,4 +38,4 @@ jobs:
         context: ./
         platforms: linux/amd64,linux/arm64
         push: true
-        tags: ghcr.io/hutility-docs/hutility-docs:latest
+        tags: ghcr.io/zikanwari/hutility-docs:latest
